@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Hide / show password</title>
+	<link rel="stylesheet" href="pri.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="form-box">
+		<h1> Login</h1>
+		<center>
+		<div class="input-box">
+			<i class="fa fa-envelope-o"></i>
+			<input type="email"placeholder="Email id">
+		</div><br>
+
+		<div class="input-box">
+			<i class="fa fa-key"></i>
+			<input type="password" placeholder="Password" id="myinput">
+			<span class="eye" onclick="myfunction()">
+				<i id="hide1" class="fa fa-eye"></i>
+				<i id="hide2" class="fa fa-eye-slash"></i>
+			</span>
+		</div>
+	</center>
+		<center>
+		<button type="button" class="login-btn">LOGIN</button>
+		</center>
+	</div>
+	<script >
+		function myfunction()
+		{
+			var x = document.getElementsById("myinput");
+			var y = document.getElementsById("hide1");
+			var z = document.getElementsById("hide2");
+
+			if(x.type === 'password')
+			{
+				x.type = "text";
+				y.style.display = "block";
+				z.style.display = "none";
+
+			}
+			else
+			{
+				x.type = "passworg";
+				y.style.display = "none";
+				z.style.display = "block";
+			}
+		}
+		
+
+	
+	</script>
+</body>
+</html>
